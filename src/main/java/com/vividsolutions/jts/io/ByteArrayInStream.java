@@ -40,7 +40,7 @@ package com.vividsolutions.jts.io;
 public class ByteArrayInStream
         implements InStream {
     /*
-	 * Implementation improvement suggested by Andrea Aime - Dec 15 2007
+     * Implementation improvement suggested by Andrea Aime - Dec 15 2007
 	 */
 
     private byte[] buffer;

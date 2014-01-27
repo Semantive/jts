@@ -189,7 +189,7 @@ public class Label {
 
     public boolean isArea(int geomIndex) {
       /*  Testing
-  	if (elt[0].getLocations().length != elt[1].getLocations().length) {
+      if (elt[0].getLocations().length != elt[1].getLocations().length) {
   		System.out.println(this);
   	}
   		*/

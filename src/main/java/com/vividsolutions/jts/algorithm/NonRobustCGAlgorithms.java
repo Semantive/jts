@@ -78,7 +78,7 @@ public class NonRobustCGAlgorithms
             /* e straddles x axis, so compute intersection. */
                 xInt = (x1 * y2 - x2 * y1) / (y2 - y1);
                 //xsave = xInt;
-			/* crosses ray if strictly positive intersection. */
+            /* crosses ray if strictly positive intersection. */
                 if (0.0 < xInt)
                     crossings++;
             }

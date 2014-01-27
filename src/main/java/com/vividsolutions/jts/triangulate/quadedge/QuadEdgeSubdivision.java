@@ -866,7 +866,7 @@ public class QuadEdgeSubdivision {
      */
     public List getVoronoiCellPolygons(GeometryFactory geomFact) {
       /*
-  	 * Compute circumcentres of triangles as vertices for dual edges.
+       * Compute circumcentres of triangles as vertices for dual edges.
   	 * Precomputing the circumcentres is more efficient, 
   	 * and more importantly ensures that the computed centres
   	 * are consistent across the Voronoi cells.

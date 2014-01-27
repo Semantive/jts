@@ -173,7 +173,7 @@ public class UnaryUnionOp {
             geomFact = geom.getFactory();
 
 		/*
-		PolygonExtracter.getPolygons(geom, polygons);
+        PolygonExtracter.getPolygons(geom, polygons);
 		LineStringExtracter.getLines(geom, lines);
 		PointExtracter.getPoints(geom, points);
 		*/

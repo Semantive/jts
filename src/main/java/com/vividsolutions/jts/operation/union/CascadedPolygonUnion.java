@@ -368,7 +368,7 @@ public class CascadedPolygonUnion {
      */
     private Geometry unionActual(Geometry g0, Geometry g1) {
       /*
-  	System.out.println(g0.getNumGeometries() + ", " + g1.getNumGeometries());
+      System.out.println(g0.getNumGeometries() + ", " + g1.getNumGeometries());
  	
   	if (g0.getNumGeometries() > 5) {
   		System.out.println(g0);
