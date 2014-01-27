@@ -326,7 +326,7 @@ public class WKTWriter {
     private void appendPointTaggedText(Coordinate coordinate, int level, Writer writer,
                                        PrecisionModel precisionModel)
             throws IOException {
-        writer.write("POINT ");
+        writer.write("ST_GeomFromText('POINT ");
         appendPointText(coordinate, level, writer, precisionModel);
     }
 
@@ -439,7 +439,7 @@ public class WKTWriter {
             writer.write("EMPTY");
         } else {
             writer.write("(");
-            appendCoordinate(coordinate, writer);
+            appendCoordinate(coordinate, writer, level);
             writer.write(")");
         }
     }
@@ -477,6 +477,11 @@ public class WKTWriter {
             writer.write(" ");
             writer.write(writeNumber(coordinate.z));
         }
+    }
+
+    private void appendCoordinate(Coordinate coordinate, Writer writer, int level) throws IOException {
+        appendCoordinate(coordinate, writer);
+        writer.write(String.format(")', %d", 4326));
     }
 
     /**
